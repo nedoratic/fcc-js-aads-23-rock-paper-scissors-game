@@ -16,4 +16,4 @@ In this mini project, you will review conditionals, functions, getElementById, a
 
 ### Live Preview
 
-[Homepage](https://nedoratic.github.io/# fcc-js-aads-23-rock-paper-scissors-game/)
+[Homepage](https://nedoratic.github.io/#fcc-js-aads-23-rock-paper-scissors-game/)
