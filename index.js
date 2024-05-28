@@ -20,3 +20,7 @@ function getRandomComputerResult() {
 function hasPlayerWonTheRound(player, computer) {
 	return (player === 'Rock' && computer === 'Scissors') || (player === 'Scissors' && computer === 'Paper') || (player === 'Paper' && computer === 'Rock');
 }
+
+// Game Variables
+let playerScore = 0;
+let computerScore = 0;
