@@ -50,3 +50,15 @@ function showResults(userOption) {
 		optionsContainer.style.display = 'none';
 	}
 }
+
+// Reset game
+function resetGame() {
+	playerScore = 0;
+	computerScore = 0;
+	playerScoreSpanElement.innerText = playerScore;
+	computerScoreSpanElement.innerText = computerScore;
+	resetGameBtn.style.display = 'none';
+	optionsContainer.style.display = 'flex';
+	roundResultsMsg.innerText = '';
+	winnerMsgElement.innerText = '';
+}
