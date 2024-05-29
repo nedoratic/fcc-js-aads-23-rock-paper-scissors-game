@@ -75,3 +75,8 @@ rockBtn.addEventListener('click', function () {
 paperBtn.addEventListener('click', function () {
 	showResults('Paper');
 });
+
+// Scissors button event listener
+scissorsBtn.addEventListener('click', function () {
+	showResults('Scissors');
+});
