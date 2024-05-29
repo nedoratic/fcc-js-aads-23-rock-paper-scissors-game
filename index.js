@@ -65,3 +65,8 @@ function resetGame() {
 
 // Reset game event listener
 resetGameBtn.addEventListener('click', resetGame);
+
+// Rock button event listener
+rockBtn.addEventListener('click', function () {
+	showResults('Rock');
+});
