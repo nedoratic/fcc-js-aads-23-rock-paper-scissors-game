@@ -28,7 +28,6 @@ let computerScore = 0;
 // Get round results
 function getRoundResults(userOption) {
 	const computerResult = getRandomComputerResult();
-
 	if (hasPlayerWonTheRound(userOption, computerResult)) {
 		playerScore++;
 		return `Player wins! ${userOption} beats ${computerResult}`;
@@ -37,5 +36,17 @@ function getRoundResults(userOption) {
 	} else {
 		computerScore++;
 		return `Computer wins! ${computerResult} beats ${userOption}`;
+	}
+}
+
+// Show results
+function showResults(userOption) {
+	roundResultsMsg.innerText = getRoundResults(userOption);
+	computerScoreSpanElement.innerText = computerScore;
+	playerScoreSpanElement.innerText = playerScore;
+	if (playerScore === 3 || computerScore === 3) {
+		winnerMsgElement.innerText = `${playerScore === 3 ? 'Player' : 'Computer'} has won the game!`;
+		resetGameBtn.style.display = 'block';
+		optionsContainer.style.display = 'none';
 	}
 }
