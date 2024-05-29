@@ -70,3 +70,8 @@ resetGameBtn.addEventListener('click', resetGame);
 rockBtn.addEventListener('click', function () {
 	showResults('Rock');
 });
+
+// Paper button event listener
+paperBtn.addEventListener('click', function () {
+	showResults('Paper');
+});
